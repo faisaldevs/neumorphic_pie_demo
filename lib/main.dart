@@ -33,6 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
     final baseColor = Colors.grey.shade300;
 
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: const Text(
           'Neumorphic Doughnut Chart',

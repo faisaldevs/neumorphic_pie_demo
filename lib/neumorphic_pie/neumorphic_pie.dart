@@ -13,7 +13,24 @@ class NeumorphicPie extends StatelessWidget {
     return Container(
       height: 290.0,
       width: 290.0,
-      decoration: BoxDecoration(shape: BoxShape.circle, color: Colors.white),
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: Colors.white,
+        boxShadow: [
+          BoxShadow(
+            color: Colors.white,
+            offset: Offset(-6, -6),
+            blurRadius: 12,
+            spreadRadius: 1,
+          ),
+          BoxShadow(
+            color: Colors.grey.shade400,
+            offset: Offset(6, 6),
+            blurRadius: 12,
+            spreadRadius: 1,
+          ),
+        ],
+      ),
       child: Center(
         // Container of the pie chart
         child: Container(
